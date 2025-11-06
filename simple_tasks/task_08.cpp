@@ -2,12 +2,12 @@
 #include <string>
 
 int main() {
-    std::string dna = "";        // исходна€ последовательность ƒЌ 
+    std::string dna = ""; 
     std::cin >> dna;
 
-    std::string result = "";     // результат Ч комплементарна€ цепочка
+    std::string result = "";
 
-    // перебираем каждый символ исходной строки
+
     for (int i = 0; i < dna.length(); i++) {
         char c = dna[i];
 
@@ -17,6 +17,7 @@ int main() {
         else if (c == 'G') result += 'C';
     }
 
-    std::cout << result;         // выводим комплементарную цепочку
+    std::cout << result;
     return 0;
 }
+
